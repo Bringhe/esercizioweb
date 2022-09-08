@@ -3,3 +3,46 @@
     padding: 0;
     margin: 0;
 }
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    max-width: 4em;
+}
+.main-nav{
+    display: none;
+}
+
+.opne-menu main-nav{
+    display: block;
+}
+
+.main-nav ul li:not(:last-child){
+    margin: 0 0 1em 0;
+}
+.main-nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.main-nav ul li a:hover{
+    color: rgb(208, 62, 17);
+}
+/* responsive*/
+@media screen and (min-width: 960px) {
+    .main-nav{
+        display: block;
+    }
+    .main-nav ul li{
+        display: inline-block;
+    }
+    .main-nav ul li:not(:last-child){
+        margin: 0 1em 0 0;
+    }
+    .btn-open-menu{
+        display: none;
+    }
+}
+/*end repsonsive*/
